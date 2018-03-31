@@ -1,0 +1,227 @@
+Last login: Thu Mar 29 12:20:23 on ttys000
+owner1s-MacBook-Air:~ Aleks$ ssh mcgaleal@dbsrv1.teach.cs.toronto.edu
+mcgaleal@dbsrv1.teach.cs.toronto.edu's password: 
+    Type "faq" to view FAQ, and "rules" to view usage policy.
+    Report system problems by sending email to <admin@teach.cs.toronto.edu>.
+
+The Teaching Labs are: BA2200 BA2210 BA2220 BA2240 BA2270 BA3175 BA3185 BA3195 BA3200
+
+This is a shared Linux system. By using this system, you acknowledge that
+some information about your computer account (e.g. login name, process data,
+etc.) will be available to other users sharing this system, in ways 
+typical of shared Linux systems.  
+
+Last login: Thu Mar 29 11:00:39 2018 from toroon2717w-lp130-01-184-146-140-156.dsl.bell.ca
+dbsrv1:~$ cd csc343a3
+dbsrv1:~/csc343a3$ ls
+data.sql  q1.sql  q2.sql  q3.sql  q4.sql  runner.txt  schema.ddl
+dbsrv1:~/csc343a3$ psql csc343h-mcgaleal
+psql (9.5.12)
+Type "help" for help.
+
+csc343h-mcgaleal=> \i schema.ddl
+psql:schema.ddl:5: NOTICE:  drop cascades to 15 other objects
+DETAIL:  drop cascades to table carschema.customer
+drop cascades to type carschema.status_type
+drop cascades to table carschema.model
+drop cascades to table carschema.car
+drop cascades to table carschema.reservation
+drop cascades to table carschema.rental_station
+drop cascades to table carschema.customer_reservation
+drop cascades to view carschema.custo_reso
+drop cascades to view carschema.num_cust_reso
+drop cascades to view carschema.deleted_reservations
+drop cascades to view carschema.not_cancelled_reservations
+drop cascades to view carschema.p
+drop cascades to view carschema.abc
+drop cascades to view carschema.deleted_reservation_cross
+drop cascades to view carschema.top2
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TYPE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+csc343h-mcgaleal=> \i data.sql
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+csc343h-mcgaleal=> \i q1.sql
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+  customer_email  | cancel_ratio 
+------------------+--------------
+ a.n@mail.com     |            1
+ jj.swtz@mail.com |            1
+(2 rows)
+
+csc343h-mcgaleal=> \i q2.sql
+ customer_email | num_shared 
+----------------+------------
+ a.n@mail.com   |          1
+ cyngu@mail.com |          1
+(2 rows)
+
+csc343h-mcgaleal=> \i q3.sql
+CREATE VIEW
+  name   
+---------
+ Kia T21
+(1 row)
+
+csc343h-mcgaleal=> \i q4.sql
+CREATE VIEW
+CREATE VIEW
+   customer_email   
+--------------------
+ s.hilbert@mail.com
+(1 row)
+
+csc343h-mcgaleal=> 
